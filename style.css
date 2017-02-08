@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'proxima-nova';
+  src:  url('fonts/proxima-nova.ttf');
+}
+
+@font-face {
+  font-family: 'proxima-nova-light';
+  src:  url('fonts/proxima-nova-light.otf');
+}
+
+@font-face {
+  font-family: 'proxima-nova-semibold';
+  src:  url('fonts/Proxima Nova Semibold.otf');
+}
+
+@font-face {
+  font-family: 'metapro-book';
+  src:  url('fonts/Metapro Book Opentype.otf');
+}
+
+@font-face {
+  font-family: 'metapro-bold';
+  src:  url('fonts/Metapro Bold Opentype.otf');
+}
+
 body {
 	background-color: white;
 }
@@ -13,8 +38,8 @@ body {
 
 }
 
-.content {
-	padding-left: 15px;
+.container {
+	padding-left: 35px;
 }
 
 h1 {
@@ -24,31 +49,71 @@ h1 {
 	font-size: 28px;
 }
 
+h2 {
+	font-family: proxima-nova-light;
+	/*font-style: normal;
+	font-weight: 400;*/
+	font-size: 20px;
+}
+
 .box {
     width: 490px;
     height: 10px;
     background-color: #DDDDDD;
 }
 
-.micro, .small, .medium, .large {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
+.business-opt {
+	float: left;
+	padding-left: 22px;
+	padding-top: 20px;
 }
 
-/*.small {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
+input[type=range] {
+  -webkit-appearance: none;
+  width: 509px;
+  border-radius: 8px;
+  position: relative;
+  height: 7px;
+  background-color: #E0E0E0; 
+}
 }
 
-.medium {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-}
-*/
-p {
-	font-family: arial;
+
+p.sub-title {
+	font-family: metapro-book;
 	font-size: 14px;
+}
+
+p.red-text {
+	font-family: arial;
+	color: #DF0523;
+	font-size: 12px;
+	margin-top: 0px;
+}
+
+p.sub-text {
+	font-family: arial;
+	color: #333333;
+	font-size: 12px;
+	margin-top: -10px;
+}
+
+p.results {
+	font-family: metapro-book;
+	font-size: 24px;
+}
+
+p.cost {
+	font-family: metapro-book;
+	font-size: 14px;
+}
+
+.slider-bar {
+	position: absolute;
+}
+
+.current-cost {
+	width: 507px;
+	height: 95px;
+	background-color: #E0E0E0;
 }
