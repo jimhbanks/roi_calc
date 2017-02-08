@@ -2,3 +2,53 @@ body {
 	background-color: white;
 }
 
+.iframe {
+	margin-left: 10px;
+	margin-top: 90px;
+	width: 545px;
+	height: 560px;
+	border-style: solid;
+    border-width: 1px;
+    border-color: red;
+
+}
+
+.content {
+	padding-left: 15px;
+}
+
+h1 {
+	font-family: arial;
+	font-weight: bold;
+	color: #333333;
+	font-size: 28px;
+}
+
+.box {
+    width: 490px;
+    height: 10px;
+    background-color: #DDDDDD;
+}
+
+.micro, .small, .medium, .large {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+/*.small {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.medium {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+*/
+p {
+	font-family: arial;
+	font-size: 14px;
+}
