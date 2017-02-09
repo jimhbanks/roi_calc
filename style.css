@@ -2,58 +2,78 @@
   font-family: 'proxima-nova';
   src:  url('fonts/proxima-nova.ttf');
 }
-
 @font-face {
   font-family: 'proxima-nova-light';
   src:  url('fonts/proxima-nova-light.otf');
 }
-
 @font-face {
   font-family: 'proxima-nova-semibold';
   src:  url('fonts/Proxima Nova Semibold.otf');
 }
-
 @font-face {
   font-family: 'metapro-book';
   src:  url('fonts/Metapro Book Opentype.otf');
 }
-
 @font-face {
   font-family: 'metapro-bold';
   src:  url('fonts/Metapro Bold Opentype.otf');
 }
 
+
 body {
 	background-color: white;
 }
 
-.iframe {
+#iframe {
 	margin-left: 10px;
 	margin-top: 90px;
 	width: 545px;
 	height: 560px;
 	border-style: solid;
     border-width: 1px;
-    border-color: red;
+    border-color: #333333;
 
 }
 
+
 .container {
-	padding-left: 35px;
+	padding-left: 15px;
 }
 
 h1 {
 	font-family: arial;
-	font-weight: bold;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .5px;
 	color: #333333;
 	font-size: 28px;
+	margin-bottom: 15px;
 }
 
-h2 {
+h2.white {
 	font-family: proxima-nova-light;
-	/*font-style: normal;
-	font-weight: 400;*/
+	font-style: normal;
+	font-weight: 200;
 	font-size: 20px;
+	color: #FFFFFF;
+	padding-top: 14px;
+	padding-left: 5px;
+}
+
+h2.black {
+    font-family: proxima-nova-light;
+	color: #4A4A4A;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+h2.result {
+	font-family: proxima-nova-light;
+	font-size: 48px;
+	color: #FFFFFF;
+	margin: 0px;
+    padding: 0px;
 }
 
 .box {
@@ -62,25 +82,50 @@ h2 {
     background-color: #DDDDDD;
 }
 
+.business-opt-left {
+	padding-left: 2px;
+	float: left;
+	padding-top: 20px;
+}
+
 .business-opt {
 	float: left;
 	padding-left: 22px;
 	padding-top: 20px;
 }
 
+
+#slider {
+	position: relative;
+	margin-top: 29px;
+}
+.status-bar {
+	width: 105px;
+	height: 7px;
+	background-color: #E0E0E0;
+}
+
 input[type=range] {
   -webkit-appearance: none;
-  width: 453px;
-  border-radius: 5px;
+  width: 509px;
+  border-radius: 13px;
   position: relative;
   height: 7px;
   background-color: #E0E0E0; 
 }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 34px;
+  border-radius: 3px;
+  outline: none;
+  background: #DF0523;
+  cursor: auto;
 }
 
-
-p.sub-title {
-	font-family: metapro-book;
+p.sub-header {
+	font-family: arial;
 	font-size: 14px;
 }
 
@@ -98,14 +143,33 @@ p.sub-text {
 	margin-top: -10px;
 }
 
-p.results {
-	font-family: metapro-book;
-	font-size: 24px;
+
+
+#grey-rect {
+	margin-top: 26px;
+	width: 507px;
+	height: 95px;
+	background-color: #E0E0E0;
 }
 
-p.cost {
+#red-rect {
+	width: 507px;
+	height: 95px;
+	background-color: #DF0523;
+	margin-top: -17px;
+}
+
+
+p.current-cost {
+	font-family: proxima-nova;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+p.cost-text {
 	font-family: metapro-book;
 	font-size: 14px;
+	font-weight: lighter;
 }
 
 .slider-bar {

@@ -4,10 +4,11 @@
 
     $('#range').html( $(this).val() );
 
-    //this is your value to be calculated
+    //this is the value to be calculated
     var value = $(this).val();
 
     $('#cost').html(value);
+     $('#cost1').html(value);
     $('#saving').html(thirtyPercentOf(value));
 
    
@@ -17,4 +18,8 @@
 
       return newNum;
     }
+
+
+
+
   });

@@ -1,68 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>KYOCERA</title>
-
-		  <link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-<body>
-
-<div class="iframe">
-
-<div class="container">
-
-<div class="content">
-<h1>Estimate your savings</h1>
-<div class="box"></div>
-<p class="sub-title">Choose business size and adjust cost</p>
-
-<div class="business-types">
-<div class="business-opt">
-<img src="images/micro.png">
-	<p class="red-text">Micro</p>
-	<p class="sub-text">< 10 employees</p>
-</div>
-
-<div class="business-opt">
-<img src="images/small.png">
-	<p class="red-text">Small</p>
-	<p class="sub-text">10-50 employees</p>
-</div>
-
-<div class="business-opt">
-<img src="images/medium.png">
-	<p class="red-text">Medium</p>
-	<p class="sub-text">50-250 employees</p>
-</div>
-
-<div class="business-opt">
-<img src="images/large.png">
-	<p class="red-text">Large</p>
-	<p class="sub-text">250+ employees</p>
-</div>
-
-
-<input type="range" id="slider" min="20000.00" max="300000.00" value="5" step="5"  />
-
-
-
-<h2>YOUR CURRENT TOTAL COST:</h2> 
-<p class="cost">Electricity + Paper + Ink toner/consumables + Print maintenance</p>
-
-<p class="resultss">£<span id="cost">0</span></p>
-<h2>ESTIMATED SAVINGS:</h2><p class="results">£<span id="saving">0</span></p>
-
-</div>
-<!-- end of content wrapper -->
-</div>
-<!-- end of iframe wrapper -->
- 
-
-
-
-</body>
-<script src="jquery.js"></script>
-<script src="script.js"></script>
-
- </html>
+<!DOCTYPE html><html><head>	<title>KYOCERA</title>		  <link rel="stylesheet" type="text/css" href="style.css"></head><body><div id="iframe"><div class="container"><h1>Estimate your savings</h1><div class="box"></div><p class="sub-header">Choose business size and adjust cost</p><div class="business-types"><div class="business-opt-left" tabindex="1"><img src="images/micro.png">	<p class="red-text">Micro</p>	<p class="sub-text">< 10 employees</p>    <div class="status-bar"></div></div><div class="business-opt"><img src="images/small.png">	<p class="red-text">Small</p>	<p class="sub-text">10-50 employees</p>    <div class="status-bar"></div></div><div class="business-opt"><img src="images/medium.png">	<p class="red-text">Medium</p>	<p class="sub-text">50-250 employees</p>    <div class="status-bar"></div></div><div class="business-opt"><img src="images/large.png">	<p class="red-text">Large</p>	<p class="sub-text">250+ employees</p>    <div class="status-bar"></div></div></div><input id="slider" type="range" id="slider" min="200000.00" max="300000.00" value="100000" step="10000" stage="50"/><div id="grey-rect"><h2 class="black">YOUR CURRENT TOTAL COST:</h2> <p class="cost-text">Electricity + Paper + Ink toner/consumables + Print maintenance</p><p class="current-c">£<span id="cost">0</span></p></div><p class="current-c">£<span id="cost">0</span></p><div id="red-rect"><h2 class="white">ESTIMATED SAVINGS:</h2><h2 class="result">£<span id="saving">0</span></h2></div><!-- <p>Percentage of revenue spent on document output costs:</p><input type="radio" value="1">1%<br><input type="radio" value="3">3%<br> --><!-- </div> --><!-- end of iframe wrapper --> </div></body><script src="jquery.js"></script><script src="script.js"></script> </html>
