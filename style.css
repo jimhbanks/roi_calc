@@ -99,11 +99,19 @@ h2.result {
 	position: relative;
 	margin-top: 29px;
 }
+
 .status-bar {
 	width: 105px;
 	height: 7px;
 	background-color: #E0E0E0;
 }
+
+:active .status-bar {
+	width: 105px;
+	height: 7px;
+	background-color: #DF0523;
+}
+
 
 input[type=range] {
   -webkit-appearance: none;
