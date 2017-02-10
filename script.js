@@ -1,5 +1,5 @@
 
-  $(document).on('input', '#slider', function() {
+  $(document).on('input', '.slider', function() {
     
 
     $('#range').html( $(this).val() );
@@ -8,7 +8,6 @@
     var value = $(this).val();
 
     $('#cost').html(value);
-     $('#cost1').html(value);
     $('#saving').html(thirtyPercentOf(value));
 
    

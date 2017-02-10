@@ -135,6 +135,7 @@ input[type=range]::-webkit-slider-thumb {
 p.sub-header {
 	font-family: arial;
 	font-size: 14px;
+	font-weight: lighter;
 }
 
 p.red-text {
